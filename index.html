@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akanda & Adinda - Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/video/background.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Header -->
+  <header class="hero fade-in">
+    <h1 class="couple-name">Akanda & Adinda</h1>
+    <p class="date">20 Desember 2025</p>
+    <p class="venue">Hotel Aston Ciloto, Cianjur</p>
+  </header>
+
+  <div style="text-align:center; margin-top:20px;">
+  <iframe 
+    width="100%" 
+    height="480" 
+    src="https://www.youtube.com/embed/JoQYkBbD3zs?autoplay=1&mute=1&loop=1&playlist=JoQYkBbD3zs" 
+    title="Video Pre Wedding Romantis"
+    frameborder="0" 
+    allow="autoplay; encrypted-media; picture-in-picture" 
+    allowfullscreen
+    style="border-radius:20px;">
+  </iframe>
+</div>
+
+
+  <!-- Countdown -->
+  <section id="countdown" class="countdown fade-in"></section>
+
+  <!-- Invitation Text -->
+  <section class="invitation fade-up">
+    <h2>Dengan penuh kasih,</h2>
+    <p>Kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam hari bahagia kami.</p>
+    <p class="quote">"Cinta adalah ketika dua jiwa berpadu menjadi satu harmoni abadi."</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery fade-up">
+    <img src="image/wedingpct1.png" alt="Foto Pasangan">
+  </section>
+
+  <!-- Event Details -->
+  <section class="event fade-up">
+    <h2>Rangkaian Acara</h2>
+    <ul>
+      <li>💍 Akad Nikah — 09:00 WIB</li>
+      <li>🎉 Resepsi — 11:00 WIB sampai selesai</li>
+    </ul>
+  </section>
+
+  <!-- RSVP Form -->
+  <section class="rsvp fade-up">
+    <h2>Konfirmasi Kehadiran</h2>
+    <form id="rsvpForm">
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+      <select id="kehadiran" required>
+        <option value="">Konfirmasi...</option>
+        <option value="hadir">Hadir</option>
+        <option value="tidak">Tidak Hadir</option>
+      </select>
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="rsvpMessage"></p>
+  </section>
+
+  <section id="rsvp" style="text-align:center; padding:50px 20px; background-color:#fff0f6; border-radius:20px;">
+  <h2 style="font-family:'Playfair Display', serif; color:#b86b77;">Konfirmasi Kehadiran</h2>
+  <p style="font-family:'Poppins', sans-serif; color:#555;">Kami sangat berbahagia bila Anda dapat hadir di hari istimewa kami.</p>
+
+  <!-- Tombol WhatsApp -->
+  <a href="https://wa.me/6282124074402?text=Halo%20Akanda%20dan%20Adinda,%20saya%20akan%20hadir%20di%20acara%20pernikahan%20tanggal%2020%20Desember%202025%20di%20Hotel%20Aston%20Ciloto%2C%20Cianjur."
+     target="_blank"
+     style="
+       display:inline-block;
+       background-color:#25D366;
+       color:white;
+       font-weight:bold;
+       padding:14px 28px;
+       border-radius:40px;
+       text-decoration:none;
+       font-family:'Poppins', sans-serif;
+       font-size:16px;
+       margin-top:25px;
+       box-shadow:0 4px 12px rgba(0,0,0,0.25);
+       transition:all 0.3s ease;">
+    💚 Konfirmasi Kehadiran via WhatsApp
+  </a>
+</section>
+
+
+  <!-- Music Control -->
+  <div class="music-control fade-in">
+    <button id="toggleMusic">🔊 Musik</button>
+  </div>
+
+  <audio id="music" src="https://sharevideo1.com/file/aEtwNGpHcHMzZWs=?t=ytb&f=w" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
